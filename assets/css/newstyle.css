@@ -1,0 +1,170 @@
+:root {
+    --color-1: #557153;
+    --link-color-1: #7D8F69;
+    --link-color-2: #677556;
+    --color-3: #A9AF7E;
+    --bg-color: #E6E5A3;
+}
+
+
+
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--bg-color);
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color-1);
+}
+
+ion-icon {
+    /* font-size: 24px; */
+}
+
+hr {
+    background: var(--bg-color);
+}
+
+
+
+.header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    align-items: center;
+    background: transparent;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #f7f9fb;
+    transition: all .45s ease;
+}
+
+.header-top {}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 5%;
+}
+
+.nav-contact {
+    display: flex;
+    align-items: center;
+}
+
+.nav-contact a {
+    margin: 0px 20px;
+}
+
+.nav-contact a:hover {
+    /* background: var(--link-color-3); */
+    color: var(--link-color-2);
+    transform: scale(0.9);
+}
+
+.nav-social {
+    display: flex;
+    align-items: center;
+}
+
+.nav-social a {
+    margin: 0px 20px;
+}
+
+.nav-social a ion-icon {
+    font-size: 20px;
+}
+
+.nav-social a:hover {
+    color: var(--link-color-2);
+    transform: scale(0.9);
+}
+
+.header-bottom {
+    width: 100%;
+    height: auto;
+}
+
+
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 2% 5px 10%;
+}
+
+.nav-logo p {
+    color: var(--link-color-1);
+    font-size: 24px;
+    font-weight: bold;
+    transition: all .45s ease;
+}
+
+.nav-logo p:hover {
+    /* color: var(--link-color-2); */
+    transform: scale(1.1);
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+	display: flex;
+}
+
+.links a {
+	color: var(--link-color-1);
+    font-size: 24px;
+    font-weight: bold;
+	transition: all .45s ease;
+    padding: 5px 15px;
+}
+
+ul li a:hover {
+	color: var(--link-color-2);
+    transform: scale(1.2);
+}
+
+nav ul li:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    transition: .3s;
+    background-color: var(--link-color-2);
+    transform: translateY(20px);
+}
+
+.links a.active {
+	color: var(--link-color-2);
+}
+
+.link-icon {
+    gap: 5px;
+    padding: 5px 15px;
+}
+
+.link-icon a {
+    padding: 0px 30px;
+}
+
+.link-icon a ion-icon {
+    font-size: 30px;
+}
+
+.link-icon a ion-icon:hover {
+    color: var(--link-color-2);
+    transform: scale(1.1);
+}
